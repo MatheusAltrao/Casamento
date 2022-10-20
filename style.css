@@ -279,9 +279,29 @@ audio {
 }
 
 
-@media (max-width:330px) {
+@media (max-width:374px) {
   .buttons a {
     height: 43px;
     width: 43px;
+  }
+}
+
+@media (min-width:500px) {
+
+  body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
