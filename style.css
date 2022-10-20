@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vai&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #faf7fd;
+  --base-color: #b07682;
+  --rosa-claro: #fcd9d3;
+}
+
+html {
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Cuprum', sans-serif;
+
+  background-color: var(--rosa-claro);
+
+  /*  background-image: url(images/bg3.avif); */
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 800px;
+
+  color: #000;
+
+  display: flex;
+  justify-content: center;
+
+
+
+  font-family: 'Dancing Script', cursive;
+
+  object-fit: cover;
+
+
+}
+
+.hidden {
+  overflow: -moz-hidden-unscrollable;
+  overflow: hidden;
+}
+
+
+
+.buttons a i {
+  fill: var(--base-color);
+  stroke: var(--base-color);
+}
+
+.title {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+
+  opacity: 0.9;
+
+  padding: 0 8px;
+}
+
+.container {
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  background-color: var(--base-color);
+  flex-direction: column;
+
+  color: #fff;
+
+  border: 2px solid #fff;
+  margin: 1rem;
+
+  border-radius: 8px;
+}
+
+.image {
+  margin-bottom: 15px;
+  height: 300px;
+  width: 100%;
+
+}
+
+.image img {
+
+
+  border-radius: 6px;
+
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+
+
+
+}
+
+.casal {
+  margin-bottom: 2rem;
+
+}
+
+.casal p {
+  text-align: center;
+  font-family: 'Noto Sans Vai', sans-serif;
+  font-size: 32px;
+  color: #fff;
+}
+
+
+.convite,
+.aviso {
+  margin-bottom: 2rem;
+}
+
+
+
+.p {
+  text-align: center;
+  font-size: 22px;
+}
+
+.font {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+
+  line-height: 25px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  gap: 16px;
+
+  margin-bottom: 68px;
+}
+
+.buttons a {
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+
+  background-color: var(--rosa-claro);
+  color: var(--base-color);
+  font-weight: 600;
+  font-size: 16px;
+
+  text-transform: uppercase;
+
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+
+  cursor: pointer;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 30px;
+
+}
+
+
+
+.buttons a svg {
+  fill: var(--base-color);
+  stroke: var(--base-color);
+
+}
+
+.cardpergunta,
+.cardgift {
+  display: none;
+  opacity: 0;
+  visibility: 0;
+
+  margin: 0;
+
+  color: #fff;
+
+  padding: 1rem;
+
+  position: fixed;
+  z-index: 9999;
+
+  width: 90vw;
+  height: 650px;
+  background-color: var(--base-color);
+  border: 2px solid #fff;
+  border-radius: 8px;
+
+  top: 20px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.cardpergunta.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cardgift.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.close {
+  cursor: pointer;
+}
+
+/* ajustar font
+
+
+casal
+convite
+
+*/
+
+
+
+
+@media (max-width:350px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .buttons a {
+    height: 50px;
+    width: 50px;
+  }
+}
