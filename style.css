@@ -184,6 +184,8 @@ body {
   padding: 1rem;
 
   position: fixed;
+  top: 2rem;
+
   z-index: 9999;
 
   width: 90vw;
@@ -305,5 +307,11 @@ audio {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .cardpergunta,
+  .cardgift {
+    max-width: 400px;
+    top: 4rem;
   }
 }
