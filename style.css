@@ -219,24 +219,19 @@ body {
 
 audio {
   margin-bottom: 1rem;
-  width: 290px;
+  width: 250px;
 }
 
 .developer {
   margin-top: 2rem;
-
-  color: #000;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.developer p {
-  text-align: center;
+  color: #000;
 }
 
 .developer a {
-
   font-family: sans-serif;
   color: #7c17b4;
 }
@@ -244,10 +239,10 @@ audio {
 
 /* animation */
 
+
 .title {
   animation: fromLeft 0.5s ease backwards;
   animation-delay: 0.2s;
-
 }
 
 .casal {
@@ -270,11 +265,6 @@ audio {
   animation-delay: 0.650s;
 }
 
-.boxaudio {
-  animation: fromLeft 0.5s ease backwards;
-  animation-delay: 0.750s;
-}
-
 
 @keyframes fromLeft {
   from {
@@ -288,26 +278,10 @@ audio {
   }
 }
 
-@keyframes formTop {
-  from {
-    opacity: 0;
-    transform: translateY(-50);
-  }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (max-width:350px) {
-  .container {
-    height: 100vh;
-    width: 100vw;
-  }
-
+@media (max-width:330px) {
   .buttons a {
-    height: 50px;
-    width: 50px;
+    height: 43px;
+    width: 43px;
   }
 }
