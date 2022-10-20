@@ -20,13 +20,8 @@ html {
 
 body {
   font-family: 'Cuprum', sans-serif;
-
   background-color: var(--rosa-claro);
-
-
-  color: #000;
-
-
+  padding: 1rem;
 }
 
 .hidden {
@@ -59,10 +54,8 @@ body {
 }
 
 .container {
-
-
-
   display: flex;
+  justify-content: center;
   align-items: center;
 
   background-color: var(--base-color);
@@ -229,16 +222,75 @@ audio {
   width: 290px;
 }
 
-/* ajustar font
+.developer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.developer a {
+  font-family: sans-serif;
+  color: #7c17b4;
+}
 
 
-casal
-convite
+/* animation */
 
-*/
+.title {
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.2s;
+
+}
+
+.casal {
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.350s;
+}
+
+.convite {
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.450s;
+}
+
+.aviso {
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.550s;
+}
+
+.buttons {
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.650s;
+}
+
+.boxaudio {
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.750s;
+}
 
 
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes formTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (max-width:350px) {
   .container {
