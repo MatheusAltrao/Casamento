@@ -15,7 +15,6 @@
 }
 
 html {
-
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -24,21 +23,8 @@ body {
 
   background-color: var(--rosa-claro);
 
-  /*  background-image: url(images/bg3.avif); */
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 800px;
 
   color: #000;
-
-  display: flex;
-  justify-content: center;
-
-
-
-
-
-  object-fit: cover;
 
 
 }
@@ -51,6 +37,14 @@ body {
 .buttons a i {
   fill: var(--base-color);
   stroke: var(--base-color);
+}
+
+.box-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .title {
@@ -66,7 +60,7 @@ body {
 
 .container {
 
-  position: relative;
+
 
   display: flex;
   align-items: center;
@@ -76,8 +70,10 @@ body {
 
   color: #fff;
 
+
+
   border: 2px solid #fff;
-  margin: 1rem;
+  margin: 1rem, 1rem, 0, 1rem;
 
   border-radius: 8px;
 }
@@ -142,7 +138,7 @@ body {
 
   gap: 16px;
 
-  margin-bottom: 68px;
+  margin-bottom: 2rem;
 }
 
 .buttons a {
@@ -230,7 +226,7 @@ body {
 
 audio {
   margin-bottom: 1rem;
-
+  width: 290px;
 }
 
 /* ajustar font
