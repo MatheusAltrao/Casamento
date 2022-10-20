@@ -224,11 +224,19 @@ audio {
 
 .developer {
   margin-top: 2rem;
-  text-align: center;
+
   color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.developer p {
+  text-align: center;
 }
 
 .developer a {
+
   font-family: sans-serif;
   color: #7c17b4;
 }
